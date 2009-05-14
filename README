@@ -1,0 +1,8 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2631
+
+I couldn't find an indent script for DOS batch files so I wrote a simple one.  It just follows these rules:
+ - generally keep the indent of the previous line 
+ - if previous line is not a comment and has ( and no matching ), increase indent
+ - if this line starts with ), decrease indent
+
+I started by cutting down and modifying Erik Janssen's awk.vim.
